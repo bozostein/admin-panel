@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
 }
 
 .header{
@@ -33,3 +35,39 @@
     background-color: rgb(55, 200, 245);
 }
 
+.container-main{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    padding: 30px;
+    display: flex;
+    height: 78%;
+    width: 100%;
+}
+.cards{
+    display: grid;
+    height: 600px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+
+}
+
+.announcement{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+.trending{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.card1{
+    border: 1px solid black;
+}
