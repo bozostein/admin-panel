@@ -16,7 +16,11 @@
 
 
 
-
+.invisibleBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
 
 
@@ -51,6 +55,7 @@
     display: flex;
     margin: 20px;
     align-items: center;
+    height: 40px;
 }
 .buttons > img {
     width: 30px;
@@ -63,6 +68,10 @@
     font-size: 1.4rem;
     font-family: Roboto;
     font-weight: bold;
+}
+
+.buttons:hover{
+    background-color: #65b0f7;
 }
 
 .head-logo{
@@ -146,6 +155,10 @@
     font-family: Roboto;
 }
 
+#profileNameSmall{
+    width: 200px;
+}
+
     /* TOP SECTION RIGHT END */
 
 /* HEADER BOTTOM SECTION START */
@@ -214,9 +227,10 @@
         background-color: #ececec;
         display: grid;
         grid-template-columns: 5fr 1fr;
-        padding: 50px 25px;
+        padding: 30px 25px;
     }
 
+    /* MAIN CARD SECTION START */
     .cards-inner{
         grid-column: 1 / 2;
         margin-right: 25px;   
@@ -225,7 +239,12 @@
     }
 
     .heading{
+        display: flex;
         grid-row: 1 / 2;
+        font-family: Roboto;
+        font-size: 0.9rem;
+        justify-content: left;
+        align-items: baseline;
     }
 
     .cards{
@@ -233,7 +252,7 @@
         grid-row: 2 / 3;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 30px;
     }
 
@@ -275,7 +294,84 @@
      .cardBtn > img{
     width: 25px;
     }
+
+        /* MAIN CARD SECTION END */
+
+/* MAIN ANNOUNCEMENT SECTION START */
     .main-announcements{
+        display: grid;
         grid-column: 2 / 3;
-        background-color: #fabb69;
+        grid-template-rows: 50px 1fr 50px 1fr;
     }
+
+    .announcement, .trends{
+        background-color: white;
+        border-radius: 10px;
+    }
+    .announcement{
+        display: grid;
+        grid-template-rows: 1fr, 1fr 1fr;
+        padding: 20px;
+        
+    }
+
+    .announcements{
+        border-bottom: 1px solid black;
+        margin: 10px;
+    }
+
+    .announcements > h3{
+        font-family: Roboto;
+        font-size: 1rem;
+    }
+
+    .announcements > p{
+        font-family: Roboto;
+        font-size: 0.8rem;
+        color: rgb(88, 87, 87);
+        
+    }
+
+
+    .info-heading{
+        text-align: left;
+        align-self: center;
+        font-family: Roboto;
+        font-size: 0.9rem;
+    }
+
+.trends{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 25px;
+}
+.trends-item{
+    display: flex;
+}
+
+.trendingProfileImg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 100px;
+}
+.trends-item-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.userIdBold{
+    color: black;
+    font-family: Roboto;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.userDesc{
+    font-family: Roboto;
+    font-size: 0.9rem;
+color: gray;
+}
+
+/* MAIN ANNOUNCEMENT SECTION END */
