@@ -16,11 +16,7 @@
 
 
 
-.header{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    background-color: red;
-}
+
 
 .main{
     grid-column: 2 / 3;
@@ -33,7 +29,7 @@
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color: rgb(96, 178, 255);
+    background-color: #3e9af0;
     padding-left: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,5 +87,122 @@
     font-weight: bold;
 }
 
-
 /* SIDEBAR SECTION END*/
+
+/* HEADER SECTION START */
+
+    /* HEADER TOP SECTION LEFT START*/
+.header{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: rgb(255, 255, 255);
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    padding: 20px 70px;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.headerIcons{
+    width: 25px;
+    filter: invert(0%) sepia(90%) saturate(7500%) hue-rotate(187deg) brightness(93%) contrast(103%);
+    margin-right: 20px;
+}
+.search-section > input {
+    height: 30px;
+    width: 70%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    border: none;
+}
+    /* HEADER TOP SECTION LEFT END */
+
+
+    /* TOP SECTION RIGHT START*/
+
+.profile-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#profilePicSmall{
+    width: 50px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.profile-section p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+    /* TOP SECTION RIGHT END */
+
+/* HEADER BOTTOM SECTION START */
+
+
+.bottom-header{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+
+    /* HEADER BOTTOM LEFT SECTION START */
+.name-info-section{
+    display: flex;
+    align-items: center;
+}
+
+#profilePicBig{
+    width: 70px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.welcoming-text > p {
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.welcoming-text > h3{
+    font-size: 1.4rem;
+    font-family: Roboto;
+    font-weight: bold;
+}
+   /* HEADER BOTTOM LEFT SECTION END */
+
+    /* HEADER BOTTOM RIGHT SECTION START */
+    .buttons-section{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .buttons-section > button{
+        width: 110px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        margin: 0 15px;
+        background-color: #3e9af0;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-family: Roboto;
+        color: white;
+        cursor: pointer;;
+    }
